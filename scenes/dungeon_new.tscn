@@ -15,7 +15,7 @@ size = Vector3(12, 4, 0.5)
 [node name="dungeon_new" type="Node3D"]
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(0.707106, 0.661225, 0.250563, -0.5, 0.718119, -0.48405, -0.5, 0.216994, 0.838399, 0, 5, 0)
+transform = Transform3D(0.866025, 0.383022, 0.321394, 0, 0.642788, -0.766044, -0.5, 0.663414, 0.55667, 0, 10, 0)
 light_energy = 2.0
 
 [node name="Floor1" parent="." instance=ExtResource("2")]
@@ -86,9 +86,10 @@ shape = SubResource("2")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 script = ExtResource("1")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
 [node name="Skeleton_Warrior" parent="Player" instance=ExtResource("5")]
 
 [node name="Camera3D" type="Camera3D" parent="Player"]
-transform = Transform3D(1, 0, 0, 0, 0.5, -0.866025, 0, 0.866025, 0.5, 0, 10, -6)
+transform = Transform3D(-1, 0, 0, 0, 0.422618, -0.906308, 0, -0.906308, -0.422618, 0, 15, 20)
 current = true
