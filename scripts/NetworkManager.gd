@@ -21,17 +21,17 @@ func register_player(p):
 	last_send_pos = p.global_transform.origin
 
 func send_movement(delta_pos: Vector3):
-	var dx = clamp(delta_pos.x, -5.0, 5.0)
-	var dy = clamp(delta_pos.y, -5.0, 5.0)
-	var dz = clamp(delta_pos.z, -5.0, 5.0)
-	var pkt := PackedByteArray()
-	pkt.append_u32(player_id)
-	pkt.append_u16(1)
-	pkt.append_float(dx)
-	pkt.append_float(dy)
-	pkt.append_float(dz)
-	udp.put_packet(pkt)
-	last_send_pos = player_ref.global_transform.origin
+    var dx = clamp(delta_pos.x, -5.0, 5.0)
+    var dy = clamp(delta_pos.y, -5.0, 5.0)
+    var dz = clamp(delta_pos.z, -5.0, 5.0)
+    var buf := StreamPeerBuffer.new()
+    buf.put_u32(player_id)
+    buf.put_u16(1)
+    buf.put_float(dx)
+    buf.put_float(dy)
+    buf.put_float(dz)
+    udp.put_packet(buf.get_data_array())
+    last_send_pos = player_ref.global_transform.origin
 
 func send_chat(text:String):
 	var msg = {
