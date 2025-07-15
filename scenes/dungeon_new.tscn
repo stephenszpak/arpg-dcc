@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=3 uid="uid://dor53xr3x45qm"]
+[gd_scene load_steps=9 format=3 uid="uid://dor53xr3x45qm"]
 
 [ext_resource type="Script" uid="uid://budo8pfvsmbd1" path="res://scripts/Player.gd" id="1"]
 [ext_resource type="PackedScene" uid="uid://ctxq3xqyj71i5" path="res://assets/environments/mini_dungeon/GLB format/floor.glb" id="2"]
@@ -13,7 +13,6 @@ size = Vector3(12, 1, 12)
 size = Vector3(12, 4, 0.5)
 
 [sub_resource type="CapsuleShape3D" id="3"]
-radius = 0.5
 height = 1.5
 
 [node name="dungeon_new" type="Node3D"]
