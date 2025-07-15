@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4hdt86y71gte"
+path="res://.godot/imported/road-asphalt-corner-inner.obj-e84ec7984e8e0a2ff1f7ca7d5334f232.mesh"
+
+[deps]
+
+files=["res://.godot/imported/road-asphalt-corner-inner.obj-e84ec7984e8e0a2ff1f7ca7d5334f232.mesh"]
+
+source_file="res://assets/environments/kenney_retro_urban/Models/OBJ format/road-asphalt-corner-inner.obj"
+dest_files=["res://.godot/imported/road-asphalt-corner-inner.obj-e84ec7984e8e0a2ff1f7ca7d5334f232.mesh", "res://.godot/imported/road-asphalt-corner-inner.obj-e84ec7984e8e0a2ff1f7ca7d5334f232.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false

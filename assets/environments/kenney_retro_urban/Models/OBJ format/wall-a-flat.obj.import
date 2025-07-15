@@ -1,0 +1,25 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ftcibq4jm313"
+path="res://.godot/imported/wall-a-flat.obj-0d3a006e0b2e066a2d9abd28356b06f0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/wall-a-flat.obj-0d3a006e0b2e066a2d9abd28356b06f0.mesh"]
+
+source_file="res://assets/environments/kenney_retro_urban/Models/OBJ format/wall-a-flat.obj"
+dest_files=["res://.godot/imported/wall-a-flat.obj-0d3a006e0b2e066a2d9abd28356b06f0.mesh", "res://.godot/imported/wall-a-flat.obj-0d3a006e0b2e066a2d9abd28356b06f0.mesh"]
+
+[params]
+
+generate_tangents=true
+generate_lods=true
+generate_shadow_mesh=true
+generate_lightmap_uv2=false
+generate_lightmap_uv2_texel_size=0.2
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+force_disable_mesh_compression=false
