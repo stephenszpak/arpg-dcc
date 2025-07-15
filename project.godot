@@ -1,0 +1,7 @@
+[gd_resource type="ProjectSettings" load_steps=2 format=3]
+
+[application]
+config/name="ARPG"
+run/main_scene="res://scenes/World.tscn"
+
+[autoload]
