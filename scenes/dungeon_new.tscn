@@ -58,34 +58,36 @@ transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 6, 0, 0)
 [node name="WestWall" parent="Walls" instance=ExtResource("4")]
 transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -6, 0, 0)
 
+
 [node name="WallCollisionNorth" type="StaticBody3D" parent="Walls"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallCollisionNorth"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -6)
+shape = SubResource("2")
 
 [node name="WallCollisionSouth" type="StaticBody3D" parent="Walls"]
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallCollisionSouth"]
+transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 2, 6)
+shape = SubResource("2")
+
 [node name="WallCollisionEast" type="StaticBody3D" parent="Walls"]
 
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallCollisionEast"]
+transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 6, 2, 0)
+shape = SubResource("2")
+
 [node name="WallCollisionWest" type="StaticBody3D" parent="Walls"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="WallCollisionWest"]
+transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -6, 2, 0)
+shape = SubResource("2")
 
 [node name="FloorCollision" type="StaticBody3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="FloorCollision"]
 shape = SubResource("1")
 
-[node name="WallCollisionNorth#CollisionShapeNorth" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2, -6)
-shape = SubResource("2")
-
-[node name="WallCollisionSouth#CollisionShapeSouth" type="CollisionShape3D" parent="."]
-transform = Transform3D(-1, 0, 0, 0, 1, 0, 0, 0, -1, 0, 2, 6)
-shape = SubResource("2")
-
-[node name="WallCollisionEast#CollisionShapeEast" type="CollisionShape3D" parent="."]
-transform = Transform3D(0, 0, 1, 0, 1, 0, -1, 0, 0, 6, 2, 0)
-shape = SubResource("2")
-
-[node name="WallCollisionWest#CollisionShapeWest" type="CollisionShape3D" parent="."]
-transform = Transform3D(0, 0, -1, 0, 1, 0, 1, 0, 0, -6, 2, 0)
-shape = SubResource("2")
 
 [node name="Player" type="CharacterBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
